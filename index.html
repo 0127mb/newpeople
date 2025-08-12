@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Umumiy sahifa dizayni */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kalkulyator qutisi */
+.boxcalculator {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Inputlar */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 2px solid #3b82f6;
+}
+
+/* Tugmalar joylashuvi */
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Tugmalar */
+.calculator button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effekti */
+.calculator button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Natija qutisi */
+.box {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    min-height: 40px;
+}
+    
+</style>
+<body>
+<div class="boxcalculator">
+    <input type="text" class="input1">
+    <input type="text" class="input2">
+        <div class="calculator">
+        <button class="pLus">+</button>
+        <button class="minus">-</button>
+        <button class="multiply">*</button>
+        <button class="divide">/</button>
+       
+    </div>
+<div class="box"></div>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
